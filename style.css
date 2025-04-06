@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black url('surveillance.jpeg') no-repeat center center;
+  background-size: cover;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+#main-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: #00ffc3;
+  margin-bottom: 1em;
+}
+
+#subtitle {
+  font-size: 1.2em;
+  white-space: pre-line;
+  min-height: 4em;
+}
+
+#launch-btn {
+  display: none;
+  margin-top: 40px;
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid #00ffc3;
+  color: #00ffc3;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s;
+}
+
+#launch-btn:hover {
+  background-color: #00ffc3;
+  color: black;
+}
+
+.blur-spot {
+  position: absolute;
+  top: 72%;
+  left: 47%;
+  width: 8%;
+  height: 12%;
+  backdrop-filter: blur(12px);
+  border-radius: 50%;
+  z-index: 1;
+}
